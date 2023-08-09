@@ -72,8 +72,22 @@ st.sidebar.write("3. Urgent: Your account needs verification. Click the link to 
 
 # App information and credits
 st.sidebar.markdown("---")
-st.sidebar.markdown("Built with ❤️ by [Your Name]")
-st.sidebar.markdown("[GitHub Repository](https://github.com/yourusername/your-app)")
+st.sidebar.markdown("Built with ❤️ by sawan rawat")
+st.sidebar.markdown("[GitHub Repository](https://github.com/sawanjr)")
 
 # Customize the layout
 st.markdown('<style>body{background-color: #f5f5f5;}</style>', unsafe_allow_html=True)
+st.markdown('<style>.stTextInput>div>div>textarea {background-color: #f0f0f0;}</style>', unsafe_allow_html=True)
+
+# Set a background image
+st.markdown(
+    
+    <style>
+    body {
+        background-image: url('https://st2.depositphotos.com/1008768/6616/i/450/depositphotos_66166645-stock-photo-stop-junk-mail-and-spam.jpg');
+        background-size: cover;
+    }
+    </style>
+    ,
+    unsafe_allow_html=True
+)
