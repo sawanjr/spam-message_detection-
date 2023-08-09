@@ -42,10 +42,10 @@ st.title("Email/Message Spam Classifier")
 st.markdown("This app predicts whether an email/message is spam or not spam.")
 
 # User input
-input_sms = st.text_area("Enter the message", height=150)
+input_sms = st.text_area("Enter the message or email ", height=150)
 
 # Prediction button
-if st.button("Predict"):
+if st.button("Classify"):
     if not input_sms:
         st.warning("Please enter a message.")
     else:
@@ -79,7 +79,4 @@ st.sidebar.markdown("[GitHub Repository](https://github.com/sawanjr)")
 st.markdown('<style>body{background-color: #f5f5f5;}</style>', unsafe_allow_html=True)
 st.markdown('<style>.stTextInput>div>div>textarea {background-color: #f0f0f0;}</style>', unsafe_allow_html=True)
 
-# Set a background image
-# Display image from web address
-image_url = "https://st2.depositphotos.com/1008768/6616/i/450/depositphotos_66166645-stock-photo-stop-junk-mail-and-spam.jpg"
-st.image(image_url, use_container_width=True)
+
