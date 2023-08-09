@@ -1,8 +1,9 @@
+import nltk
+nltk.download('punkt')
 import streamlit as st
 import pickle
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer as ps
-import nltk
 
 
 
