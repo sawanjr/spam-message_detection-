@@ -80,14 +80,6 @@ st.markdown('<style>body{background-color: #f5f5f5;}</style>', unsafe_allow_html
 st.markdown('<style>.stTextInput>div>div>textarea {background-color: #f0f0f0;}</style>', unsafe_allow_html=True)
 
 # Set a background image
-st.markdown(
-    
-    <style>
-    body {
-        background-image: url('https://st2.depositphotos.com/1008768/6616/i/450/depositphotos_66166645-stock-photo-stop-junk-mail-and-spam.jpg');
-        background-size: cover;
-    }
-    </style>
-    ,
-    unsafe_allow_html=True
-)
+# Display image from web address
+image_url = "https://st2.depositphotos.com/1008768/6616/i/450/depositphotos_66166645-stock-photo-stop-junk-mail-and-spam.jpg"
+st.image(image_url, use_container_width=True)
