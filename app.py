@@ -9,7 +9,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Load pickled objects
-with open("vectorizers1.pkl", "rb") as file:
+with open("vectorizer.pkl", "rb") as file:
     tfidf = pickle.load(file)
 model = pickle.load(open('model.pkl', 'rb'))
 
@@ -40,7 +40,11 @@ def transform_sms(Sms):
 # Streamlit UI
 st.title("Email/Message Spam Classifier")
 st.markdown("This app predicts whether an email/message is spam or not spam.")
-input_sms = st.text_area("Enter the message")
+
+# User input
+input_sms = st.text_area("Enter the message", height=150)
+
+# Prediction button
 if st.button("Predict"):
     if not input_sms:
         st.warning("Please enter a message.")
@@ -53,13 +57,23 @@ if st.button("Predict"):
         result = model.predict(vector_input)[0]
 
         # Display prediction
+        st.markdown("---")
         if result == 1:
             st.markdown("**Prediction:** This message is **spam**.")
         else:
             st.markdown("**Prediction:** This message is **not spam**.")
+        st.markdown("---")
 
 # Example messages for user guidance
 st.sidebar.header("Example Messages:")
 st.sidebar.write("1. Congratulations! You've won a prize worth $1000.")
 st.sidebar.write("2. Hi, how are you doing? Let's catch up sometime.")
 st.sidebar.write("3. Urgent: Your account needs verification. Click the link to proceed.")
+
+# App information and credits
+st.sidebar.markdown("---")
+st.sidebar.markdown("Built with ❤️ by [Your Name]")
+st.sidebar.markdown("[GitHub Repository](https://github.com/yourusername/your-app)")
+
+# Customize the layout
+st.markdown('<style>body{background-color: #f5f5f5;}</style>', unsafe_allow_html=True)
