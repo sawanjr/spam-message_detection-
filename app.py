@@ -9,7 +9,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Load pickled objects
-with open("vectorizer.pkl", "rb") as file:
+with open("vectorizers1.pkl", "rb") as file:
     tfidf = pickle.load(file)
 model = pickle.load(open('model.pkl', 'rb'))
 
