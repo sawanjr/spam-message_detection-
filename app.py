@@ -73,7 +73,9 @@ st.sidebar.write("3. Urgent: Your account needs verification. Click the link to 
 # App information and credits
 st.sidebar.markdown("---")
 st.sidebar.markdown("Built with ❤️ by sawan rawat")
-st.sidebar.markdown("[GitHub Repository](https://github.com/sawanjr)")
+st.sidebar.markdown("please do visit my github repository below😊")
+st.sidebar.markdown("[GitHub Repository ](https://github.com/sawanjr)")
+
 
 # Customize the layout
 st.markdown('<style>body{background-color: #f5f5f5;}</style>', unsafe_allow_html=True)
