@@ -1,2 +1,4 @@
 stopwords
 punkt
+PorterStemmer
+ps
