@@ -1,5 +1,4 @@
 # spam-message_detection-
-Your README file should include the following sections:
 
 # SMS Spam Classification
 
