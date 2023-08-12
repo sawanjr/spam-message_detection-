@@ -28,7 +28,7 @@ Text preprocessing steps included converting text to lowercase, tokenization, re
 
 ## Model Building <a name="model-building"></a>
 
-Various classifiers were trained and evaluated, including Gaussian Naive Bayes, Multinomial Naive Bayes, Support Vector Classifier, Random Forest, AdaBoost, XGBoost, and more. Accuracy and precision were used as evaluation metrics.
+Various classifiers were trained and evaluated, including Gaussian Naive Bayes, Multinomial Naive Bayes, Support Vector Classifier, Random Forest, and more. Accuracy using cross val score and precision were used as evaluation metrics.
 
 ## Model Evaluation <a name="model-evaluation"></a>
 
