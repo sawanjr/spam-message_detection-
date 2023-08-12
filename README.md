@@ -28,7 +28,7 @@ Text preprocessing steps included converting text to lowercase, tokenization, re
 
 ## Model Building <a name="model-building"></a>
 
-Various classifiers were trained and evaluated, including Gaussian Naive Bayes, Multinomial Naive Bayes, Support Vector Classifier, Random Forest, AdaBoost, XGBoost, and more. Accuracy and precision were used as evaluation metrics.
+Various classifiers were trained and evaluated, including Gaussian Naive Bayes, Multinomial Naive Bayes, Support Vector Classifier, Random Forest, and more. Accuracy using cross val score and precision were used as evaluation metrics. i was little bit bais toward precision as it matters the most here
 
 ## Model Evaluation <a name="model-evaluation"></a>
 
@@ -46,5 +46,5 @@ A voting classifier and stacking classifier were implemented to combine the pred
 
 This project demonstrated the process of building a SMS spam classification model, starting from data cleaning and preprocessing to model building, evaluation, and improvement. The final model achieved high accuracy and precision, effectively distinguishing between spam and ham messages.
 
----
+------
 
